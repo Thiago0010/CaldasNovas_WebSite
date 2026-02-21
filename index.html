@@ -38,26 +38,71 @@
 <section class="promocoes">
     <h1><span class="promocao">Promoções</span></h1>
 <div class="carrossel-container carrosel-container-maior">
-<button class="btn btn-left" aria-label="Imagem anterior">❮</button>
+
 <div class="item active">
-<img src="/vivacaldas/public/imgs/DIROMA FIORI PACOTES.jpg" alt="Clube Fiori - Piscina principal">
+<img src="/vivacaldas/public/imgs/DIROMA FIORI PACOTES.jpg" alt="Clube Fiori - Piscina principal" data-value="0">
 </div>
 <div class="item">
-<img src="/vivacaldas/public/imgs/Fiori  SEGUNDA A QUINTA.jpg" alt="Clube Fiori - Área infantil">
+<img src="/vivacaldas/public/imgs/Fiori  SEGUNDA A QUINTA.jpg" alt="Clube Fiori - Área infantil" data-value="1">
 </div>
 <div class="item">
-<img src="/vivacaldas/public/imgs/Fiori SEXTA A DOMINGO.jpg" alt="Clube Fiori - Hidromassagem">
+<img src="/vivacaldas/public/imgs/Fiori SEXTA A DOMINGO.jpg" alt="Clube Fiori - Hidromassagem" data-value="2">
 </div>
 <div class="item">
-<img src="/vivacaldas/public/imgs/Lacqua diroma pacotes.jpg" alt="Clube Fiori - Toboágua">
+<img src="/vivacaldas/public/imgs/Lacqua diroma pacotes.jpg" alt="Clube Fiori - Toboágua" data-value="3">
 </div>
 <div class="item">
-<img src="/vivacaldas/public/imgs/Laqua SEGUNDA A QUINTA.jpg" alt="Clube Fiori - Bar molhado">
+<img src="/vivacaldas/public/imgs/Laqua SEGUNDA A QUINTA.jpg" alt="Clube Fiori - Bar molhado" data-value="4">
 </div>
 <div class="item">
-<img src="/vivacaldas/public/imgs/Laqua SEXTA A DOMINGO.jpg" alt="Clube Fiori - Vista geral">
+<img src="/vivacaldas/public/imgs/Laqua SEXTA A DOMINGO.jpg" alt="Clube Fiori - Vista geral" data-value="5">
 </div>
-<button class="btn btn-right" aria-label="Próxima imagem">❯</button>
+<div class="controles">
+<button class="controle-botao ativo" data-index="0" aria-label="Imagem 1"></button>
+<button class="controle-botao" data-index="1" aria-label="Imagem 2"></button>
+<button class="controle-botao" data-index="2" aria-label="Imagem 3"></button>
+<button class="controle-botao" data-index="3" aria-label="Imagem 4"></button>
+<button class="controle-botao" data-index="4" aria-label="Imagem 5"></button>
+<button class="controle-botao" data-index="5" aria-label="Imagem 6"></button>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleciona os elementos da seção de Promoções
+    const promoContainer = document.querySelector('.promocoes');
+    if (!promoContainer) return; // Segurança caso a seção não exista
+
+    const items = promoContainer.querySelectorAll('.item');
+    const botoes = promoContainer.querySelectorAll('.controle-botao');
+
+    function mudarImagem(index) {
+        // 1. Remove a classe active de todas as imagens
+        items.forEach(item => item.classList.remove('active'));
+        // 2. Remove a classe ativo de todos os botões
+        botoes.forEach(btn => btn.classList.remove('ativo'));
+
+        // 3. Adiciona as classes ao item selecionado
+        items[index].classList.add('active');
+        botoes[index].classList.add('ativo');
+    }
+
+    // Adiciona o evento de clique em cada botão
+    botoes.forEach((botao, idx) => {
+        botao.addEventListener('click', () => {
+            mudarImagem(idx);
+        });
+    });
+
+    // Opcional: Auto-play (muda sozinho a cada 5 segundos)
+    let autoSlide = setInterval(() => {
+        let currentIndex = Array.from(botoes).findIndex(b => b.classList.contains('ativo'));
+        let nextIndex = (currentIndex + 1) % items.length;
+        mudarImagem(nextIndex);
+    }, 5000);
+
+    // Para o auto-play se o usuário clicar em algum botão
+    promoContainer.addEventListener('mousedown', () => clearInterval(autoSlide));
+});
+</script>
 </div>
 </section>
 <br><br><br><br>

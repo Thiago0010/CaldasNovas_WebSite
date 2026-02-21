@@ -38,39 +38,79 @@ header ul li span{color:#2c4388}
 h1{color:#34495e;margin:35px 0;text-align:center;font-size:clamp(32px, 5vw, 40px)}.abt,.btn-whatsapp,.day.today,.dev-credit a,h1 span{font-weight:700}.carrossel-container{position:relative;width:100%;max-width:500px;height:480px;overflow:hidden;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.2);margin:0 auto}
 
 /* Carrossel maior para seção de promoções (imagens 1080x1920) */
+.promocoes {
+    padding: 20px 0;
+}
+
 .carrosel-container-maior {
     max-width:360px !important;
     height:550px !important;
     width:auto !important;
     margin: 0 auto !important;
     overflow: visible !important;
+    position: relative;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
 .carrosel-container-maior .item img {
     object-fit: contain !important;
 }
 
+.carrosel-container-maior .btn {
+    z-index: 20;
+}
+
+/* Estilos para bolinhas de navegação dentro da imagem */
+.carrosel-container-maior .controles {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    border-radius: 20px;
+    gap: 6px;
+    z-index: 15;
+}
+
+.carrosel-container-maior .controle-botao {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.carrosel-container-maior .controle-botao.ativo {
+    background-color: #fff;
+}
+
 @media (max-width:768px){
     .carrossel-container{max-width:100%;height:300px}
     .carrosel-container-maior {
+        max-width: 100% !important;
+        height: 420px !important;
+        width: 90% !important;
         max-width: 360px !important;
-        height: 400px !important;
-        width: auto !important;
     }
 }
 @media (max-width:480px){
     .carrossel-container{height:220px}
     .carrosel-container-maior {
-        max-width: 280px !important;
-        height: 320px !important;
-        width: auto !important;
+        max-width: 90% !important;
+        height: 380px !important;
+        width: 90% !important;
+    }
+    
+    .carrosel-container-maior .controles {
+        bottom: 12px;
+        padding: 6px 10px;
     }
 }
 @media (max-width:360px){
     .carrosel-container-maior {
-        max-width: 240px !important;
-        height: 280px !important;
-        width: auto !important;
+        max-width: 95% !important;
+        height: 340px !important;
+        width: 95% !important;
     }
 }.btn,.item{position:absolute}.item,.item img{height:100%;width:100%}.item{top:0;left:0;transition:opacity .5s ease-in-out;z-index:0}.item img{object-fit:cover;border-radius:12px}.item.active{opacity:1;z-index:1}.btn{top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;font-size:24px;padding:8px 12px;border-radius:50%;z-index:10;transition:background .3s}.btn-left{left:10px}.btn-right{right:10px}.btn:hover{background:rgba(0,0,0,.8)}.txt-frc{font-size:18px;color:#34495e;text-align:left;max-width:400px;margin:0 auto;padding:0}.txt-frc h2{font-size:28px;margin-bottom:16px}.carrossel-e-texto{display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;padding:20px}.fiori-pg{background-color:#f7f6f2;padding:40px 20px;margin:20px 0}.pot{margin-top:50px}.pot .carrossel-e-texto{flex-direction:row-reverse}.transition{width:100%;min-height:100vh;background:linear-gradient(to bottom,#f7f6f2 0,#007bff 200px,#1383fa 300px,transparent 300px),#1383fa;background-repeat:no-repeat;background-size:100% 300px,100% 100%;padding:20px}.transition-h1{color:#fff;padding-top:30px;font-size:clamp(28px, 5vw, 45px);text-align:center;margin-bottom:30px}
 @media (max-width:768px){
