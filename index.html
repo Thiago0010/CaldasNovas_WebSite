@@ -57,50 +57,39 @@
 <div class="item">
 <img src="/vivacaldas/public/imgs/Laqua SEXTA A DOMINGO.jpg" alt="Clube Fiori - Vista geral" data-value="5">
 </div>
-<div class="controles">
-<button class="controle-botao ativo" data-index="0" aria-label="Imagem 1"></button>
-<button class="controle-botao" data-index="1" aria-label="Imagem 2"></button>
-<button class="controle-botao" data-index="2" aria-label="Imagem 3"></button>
-<button class="controle-botao" data-index="3" aria-label="Imagem 4"></button>
-<button class="controle-botao" data-index="4" aria-label="Imagem 5"></button>
-<button class="controle-botao" data-index="5" aria-label="Imagem 6"></button>
-</div>
+
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Seleciona os elementos da seção de Promoções
-    const promoContainer = document.querySelector('.promocoes');
-    if (!promoContainer) return; // Segurança caso a seção não exista
+    document.addEventListener("DOMContentLoaded", function() {
+    const container = document.querySelector('.carrosel-container-maior');
+    if (!container) return;
 
-    const items = promoContainer.querySelectorAll('.item');
-    const botoes = promoContainer.querySelectorAll('.controle-botao');
+    let autoPlayInterval;
 
-    function mudarImagem(index) {
-        // 1. Remove a classe active de todas as imagens
-        items.forEach(item => item.classList.remove('active'));
-        // 2. Remove a classe ativo de todos os botões
-        botoes.forEach(btn => btn.classList.remove('ativo'));
+    const startAutoPlay = () => {
+        autoPlayInterval = setInterval(() => {
+            const itemWidth = container.clientWidth; // Largura visível do carrossel
+            const maxScroll = container.scrollWidth - itemWidth;
+            
+            // Se estiver no fim (ou muito perto), volta para o começo
+            if (container.scrollLeft >= maxScroll - 5) {
+                container.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                // Senão, rola para o próximo item
+                container.scrollBy({ left: itemWidth, behavior: 'smooth' });
+            }
+        }, 4000); // Troca a cada 4 segundos
+    };
 
-        // 3. Adiciona as classes ao item selecionado
-        items[index].classList.add('active');
-        botoes[index].classList.add('ativo');
-    }
+    // Inicia o autoplay
+    startAutoPlay();
 
-    // Adiciona o evento de clique em cada botão
-    botoes.forEach((botao, idx) => {
-        botao.addEventListener('click', () => {
-            mudarImagem(idx);
-        });
-    });
+    // Pausa o autoplay quando o usuário coloca o mouse ou toca na tela
+    container.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+    container.addEventListener('touchstart', () => clearInterval(autoPlayInterval));
 
-    // Opcional: Auto-play (muda sozinho a cada 5 segundos)
-    let autoSlide = setInterval(() => {
-        let currentIndex = Array.from(botoes).findIndex(b => b.classList.contains('ativo'));
-        let nextIndex = (currentIndex + 1) % items.length;
-        mudarImagem(nextIndex);
-    }, 5000);
-
-    // Para o auto-play se o usuário clicar em algum botão
-    promoContainer.addEventListener('mousedown', () => clearInterval(autoSlide));
+    // Retoma o autoplay quando o usuário para de interagir
+    container.addEventListener('mouseleave', startAutoPlay);
+    container.addEventListener('touchend', startAutoPlay);
 });
 </script>
 </div>

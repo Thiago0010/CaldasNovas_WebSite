@@ -42,15 +42,28 @@ h1{color:#34495e;margin:35px 0;text-align:center;font-size:clamp(32px, 5vw, 40px
     padding: 0px 0;
 }
 
+.carrosel-container-maior .item {
+    flex: 0 0 100%; /* Cada imagem ocupa 100% da largura */
+    width: 100%;
+    height: 100%;
+    position: relative !important; /* Muda de absolute para relative */
+    opacity: 1 !important;         /* Todas as imagens precisam estar visíveis para o scroll */
+    scroll-snap-align: center;     /* Alinha no centro ao deslizar */
+    display: block !important;
+}
+.carrosel-container-maior::-webkit-scrollbar {
+    display: none;
+}
 .carrosel-container-maior {
-    max-width:500px !important;
-    height:750px !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-    overflow: visible !important;
-    position: relative;
-    background-color: transparent !important;
+    max-width: 450px !important; /* Tamanho maior conforme pediu antes */
+    height: 650px !important;
+    display: flex !important;    /* Coloca as imagens lado a lado */
+    overflow-x: auto !important; /* Habilita o scroll horizontal */
+    scroll-snap-type: x mandatory; /* Faz a imagem "travar" na tela */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Scroll suave no iOS */
     box-shadow: none !important;
+    border-radius: 15px;
 }
 
 .carrosel-container-maior .item img {
@@ -93,8 +106,7 @@ h1{color:#34495e;margin:35px 0;text-align:center;font-size:clamp(32px, 5vw, 40px
         max-width: 400px !important;
     }
         .carrosel-container-maior .controles {
-            bottom: -43px !important;
-            padding: 16px 24px !important;
+         display: none !important;
         }
 }
 @media (max-width:480px){
@@ -106,8 +118,7 @@ h1{color:#34495e;margin:35px 0;text-align:center;font-size:clamp(32px, 5vw, 40px
     }
     
     .carrosel-container-maior .controles {
-        bottom: 12px;
-        padding: 6px 10px;
+            display: none !important;
     }
             .carrosel-container-maior .controles {
             bottom: -43px !important;
@@ -120,6 +131,9 @@ h1{color:#34495e;margin:35px 0;text-align:center;font-size:clamp(32px, 5vw, 40px
         max-width: 95% !important;
         height: 340px !important;
         width: 95% !important;
+    }
+        .carrosel-container-maior .controles {
+            display: none !important;
     }
 }.btn,.item{position:absolute}.item,.item img{height:100%;width:100%}.item{top:0;left:0;transition:opacity .5s ease-in-out;z-index:0}.item img{object-fit:cover;border-radius:12px}.item.active{opacity:1;z-index:1}.btn{top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;font-size:24px;padding:8px 12px;border-radius:50%;z-index:10;transition:background .3s}.btn-left{left:10px}.btn-right{right:10px}.btn:hover{background:rgba(0,0,0,.8)}.txt-frc{font-size:18px;color:#34495e;text-align:left;max-width:400px;margin:0 auto;padding:0}.txt-frc h2{font-size:28px;margin-bottom:16px}.carrossel-e-texto{display:flex;align-items:center;gap:0;flex-wrap:wrap;justify-content:center;padding:20px}.fiori-pg{background-color:#f7f6f2;padding:40px 20px;margin:20px 0}.pot{margin-top:50px}.pot .carrossel-e-texto{flex-direction:row-reverse}.transition{width:100%;min-height:100vh;background:linear-gradient(to bottom,#f7f6f2 0,#007bff 200px,#1383fa 300px,transparent 300px),#1383fa;background-repeat:no-repeat;background-size:100% 300px,100% 100%;padding:20px}.transition-h1{color:#fff;padding-top:30px;font-size:clamp(28px, 5vw, 45px);text-align:center;margin-bottom:30px}
 @media (max-width:768px){
