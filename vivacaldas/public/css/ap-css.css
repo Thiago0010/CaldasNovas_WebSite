@@ -1,0 +1,505 @@
+.main-image img,.thumbnail{object-fit:cover;width:100%}.room ul li,.rule-category ul li{padding-left:20px;position:relative}.apartment-page{padding-top:0}.breadcrumb{background-color:#f8f9fa;padding:15px 0;border-bottom:1px solid #e9ecef}.breadcrumb a{color:#009fd4;text-decoration:none;font-weight:500}.breadcrumb a:hover{text-decoration:underline}.breadcrumb span{color:#666;font-weight:600}.details-main h2,.hero-text h1{color:#34495e;margin-bottom:20px}.apartment-hero{background:linear-gradient(135deg,#f7f6f2 0,#e8f4f8 100%);padding:40px 0}.hero-content,.location-content{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.hero-text h1{font-size:36px;font-weight:700;text-align:left}.apartment-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}.tag{background-color:#009fd4;color:#fff;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:600}.hero-description{color:#666;font-size:16px;line-height:1.6;margin-bottom:30px}.price-info{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.price{font-size:24px;font-weight:700;color:#009fd4}.btn-reservar{background-color:#071fa7;color:#fff;padding:12px 24px;border:none;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;transition:background-color .3s}.btn-reservar:hover{background-color:#508be2}.booking-form,.hero-gallery{display:flex;flex-direction:column;gap:15px}.main-image{width:100%;height:400px;border-radius:12px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.15)}.main-image img{height:100%;transition:transform .3s}.main-image img:hover,.thumbnail:hover{transform:scale(1.05)}.thumbnail-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.thumbnail{height:60px;border-radius:6px;cursor:pointer;border:2px solid transparent;transition:border-color .3s,transform .3s}.amenity,.btn-book,.phone-btn,.whatsapp-btn{transition:background-color .3s}.thumbnail.active{border-color:#009fd4}.apartment-details{padding:60px 0;background-color:#fff}.amenity,.room{background-color:#f8f9fa}.details-grid{display:grid;grid-template-columns:2fr 1fr;gap:40px}.details-main h2{font-size:28px;font-weight:600}.details-main h3{color:#009fd4;font-size:22px;font-weight:600;margin:30px 0 20px}.description-content p{color:#666;line-height:1.7;margin-bottom:15px;font-size:16px}.room-details{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-bottom:40px}.price-line,.room ul li{margin-bottom:8px;color:#666}.room{padding:20px;border-radius:12px;border-left:4px solid #009fd4}.nearby-places h4,.room h4{color:#34495e;font-size:18px;font-weight:600;margin-bottom:15px}.nearby-places ul,.room ul,.rule-category ul{list-style:none;padding:0}.room ul li::before{content:"✓";color:#009fd4;font-weight:700;position:absolute;left:0}.amenities-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:20px}.amenity{display:flex;align-items:center;gap:10px;padding:12px;border-radius:8px}.amenity:hover{background-color:#e9ecef}.amenity-icon{font-size:20px}.details-sidebar{display:flex;flex-direction:column;gap:20px}.booking-card{background-color:#fff;border:1px solid #e9ecef;border-radius:12px;padding:25px;box-shadow:0 4px 12px rgba(0,0,0,.1);top:100px}.booking-card h3{color:#34495e;font-size:20px;font-weight:600;margin-bottom:20px;text-align:center}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form-group{display:flex;flex-direction:column}.form-group label{color:#34495e;font-weight:600;margin-bottom:5px;font-size:14px}.form-group input,.form-group select{padding:12px;border:1px solid #ddd;border-radius:6px;font-size:14px;transition:border-color .3s}.form-group input:focus,.form-group select:focus{outline:0;border-color:#009fd4}.price-breakdown{border-top:1px solid #e9ecef;padding-top:15px;margin-top:10px}.price-line{display:flex;justify-content:space-between}.price-line.total{font-weight:700;color:#34495e;font-size:16px;border-top:1px solid #e9ecef;padding-top:8px;margin-top:8px}.btn-book{background-color:#009fd4;color:#fff;padding:15px;border:none;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;margin-top:10px}.btn-book:hover,.phone-btn:hover{background-color:#007bb5}.contact-card{background-color:#f8f9fa;padding:20px;border-radius:12px;text-align:center}.contact-card h4{color:#34495e;font-size:18px;font-weight:600;margin-bottom:10px}.contact-card p{color:#666;margin-bottom:15px}.phone-btn,.whatsapp-btn{display:block;width:100%;padding:10px;margin-bottom:10px;text-decoration:none;border-radius:6px;font-weight:600}.whatsapp-btn{background-color:#25d366;color:#fff}.whatsapp-btn:hover{background-color:#128c7e}.phone-btn{background-color:#009fd4;color:#fff}.apartment-rules{background-color:#f8f9fa;padding:60px 0}.apartment-location h2,.apartment-rules h2{color:#34495e;font-size:28px;font-weight:600;text-align:center;margin-bottom:40px}.location-info h3,.rule-category h3{color:#009fd4;font-weight:600;margin-bottom:15px}.rules-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}.rule-category{background-color:#fff;padding:25px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}.rule-category h3{font-size:18px}.rule-category ul li{color:#666;margin-bottom:10px;line-height:1.5}.rule-category ul li::before{content:"•";color:#009fd4;font-weight:700;position:absolute;left:0}.apartment-location{background-color:#fff;padding:60px 0}.location-info h3{font-size:22px}.location-info p{color:#666;line-height:1.6;margin-bottom:25px}.nearby-places ul li{color:#666;margin-bottom:8px;padding:8px 0;border-bottom:1px solid #f0f0f0}.map-placeholder{background-color:#f8f9fa;border:2px dashed #ddd;border-radius:12px;height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.map-placeholder p{font-size:18px;color:#666;margin-bottom:5px}.map-placeholder small{color:#999}@media (max-width:1024px){.details-grid,.hero-content{grid-template-columns:1fr;gap:30px}.booking-card{position:static}}@media (max-width:768px){.hero-text h1{font-size:28px;text-align:center}.thumbnail-grid{grid-template-columns:repeat(3,1fr)}.amenities-grid,.form-row,.location-content,.room-details,.rules-grid{grid-template-columns:1fr}.location-content{gap:25px}}@media (max-width:480px){.apartment-hero{padding:20px 0}.apartment-details,.apartment-location,.apartment-rules{padding:40px 0}.booking-card{padding:20px}.price-info{flex-direction:column;align-items:flex-start;gap:15px}.btn-reservar{width:100%}}
+
+/* === OTIMIZAÇÕES RESPONSIVAS PARA APARTAMENTOS === */
+
+/* Tablets (768px - 1024px) */
+@media (max-width:768px) {
+    .apartment-hero {
+        padding: 25px 0;
+    }
+    
+    .hero-text h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .apartment-tags {
+        gap: 8px;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    
+    .tag {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    
+    .hero-description {
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .price {
+        font-size: 18px;
+    }
+    
+    .btn-reservar {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .main-image {
+        height: 280px;
+        border-radius: 10px;
+    }
+    
+    .thumbnail-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+    
+    .thumbnail {
+        height: 50px;
+        border-radius: 5px;
+    }
+    
+    .details-main h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    .details-main h3 {
+        font-size: 18px;
+        margin: 20px 0 15px;
+    }
+    
+    .description-content p {
+        font-size: 14px;
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+    
+    .room-details {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .room {
+        padding: 15px;
+    }
+    
+    .room h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .room ul li {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    
+    .amenities-grid {
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .amenity {
+        gap: 8px;
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .amenity-icon {
+        font-size: 18px;
+    }
+    
+    .booking-card {
+        padding: 20px;
+    }
+    
+    .booking-card h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .form-group label {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .price-line {
+        font-size: 13px;
+    }
+    
+    .price-line.total {
+        font-size: 14px;
+    }
+    
+    .btn-book {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .contact-card h4 {
+        font-size: 16px;
+    }
+    
+    .phone-btn,
+    .whatsapp-btn {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .apartment-location h2,
+    .apartment-rules h2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    
+    .location-info h3,
+    .rule-category h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .rule-category {
+        padding: 15px;
+    }
+    
+    .rule-category ul li {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    
+    .location-info p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    
+    .nearby-places ul li {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    
+    .map-placeholder {
+        height: 250px;
+    }
+    
+    .map-placeholder p {
+        font-size: 15px;
+    }
+}
+
+/* Mobile (480px - 767px) */
+@media (max-width:480px) {
+    .apartment-hero {
+        padding: 15px 0;
+    }
+    
+    .hero-text h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .apartment-tags {
+        gap: 6px;
+        margin-bottom: 12px;
+    }
+    
+    .tag {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    
+    .hero-description {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .price {
+        font-size: 16px;
+    }
+    
+    .btn-reservar {
+        padding: 8px 16px;
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    .main-image {
+        height: 220px;
+        border-radius: 8px;
+    }
+    
+    .thumbnail-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+    
+    .thumbnail {
+        height: 45px;
+    }
+    
+    .apartment-details {
+        padding: 30px 0;
+    }
+    
+    .details-main h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .details-main h3 {
+        font-size: 15px;
+        margin: 15px 0 10px;
+    }
+    
+    .description-content p {
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+    
+    .room-details {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .room {
+        padding: 12px;
+    }
+    
+    .room h4 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .room ul li {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    
+    .amenities-grid {
+        gap: 8px;
+        margin-top: 10px;
+    }
+    
+    .amenity {
+        gap: 6px;
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .amenity-icon {
+        font-size: 16px;
+    }
+    
+    .booking-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .booking-card h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .form-row {
+        gap: 8px;
+    }
+    
+    .form-group label {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .price-line {
+        font-size: 12px;
+    }
+    
+    .price-line.total {
+        font-size: 13px;
+    }
+    
+    .btn-book {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .contact-card {
+        padding: 15px;
+    }
+    
+    .contact-card h4 {
+        font-size: 14px;
+    }
+    
+    .contact-card p {
+        font-size: 12px;
+    }
+    
+    .phone-btn,
+    .whatsapp-btn {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .apartment-location,
+    .apartment-rules {
+        padding: 30px 0;
+    }
+    
+    .apartment-location h2,
+    .apartment-rules h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .rules-grid {
+        gap: 15px;
+    }
+    
+    .location-info h3,
+    .rule-category h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .rule-category {
+        padding: 12px;
+    }
+    
+    .rule-category ul li {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    
+    .location-info p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .nearby-places ul li {
+        font-size: 12px;
+        margin-bottom: 4px;
+        padding: 5px 0;
+    }
+    
+    .map-placeholder {
+        height: 200px;
+    }
+    
+    .map-placeholder p {
+        font-size: 13px;
+    }
+    
+    .map-placeholder small {
+        font-size: 11px;
+    }
+}
+
+/* Celular muito pequeno (até 360px) */
+@media (max-width:360px) {
+    .hero-text h1 {
+        font-size: 16px;
+    }
+    
+    .apartment-tags {
+        gap: 5px;
+    }
+    
+    .tag {
+        font-size: 9px;
+        padding: 3px 6px;
+    }
+    
+    .hero-description {
+        font-size: 11px;
+    }
+    
+    .main-image {
+        height: 180px;
+    }
+    
+    .thumbnail-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+    }
+    
+    .thumbnail {
+        height: 40px;
+    }
+    
+    .details-main h2 {
+        font-size: 16px;
+    }
+    
+    .details-main h3 {
+        font-size: 14px;
+    }
+    
+    .description-content p {
+        font-size: 11px;
+    }
+    
+    .room h4 {
+        font-size: 13px;
+    }
+    
+    .room ul li {
+        font-size: 11px;
+    }
+    
+    .amenity {
+        font-size: 11px;
+        padding: 6px;
+    }
+    
+    .booking-card h3 {
+        font-size: 14px;
+    }
+    
+    .form-group label {
+        font-size: 11px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        font-size: 11px;
+        padding: 7px;
+    }
+    
+    .phone-btn,
+    .whatsapp-btn {
+        font-size: 11px;
+        padding: 7px;
+    }
+    
+    .apartment-location h2,
+    .apartment-rules h2 {
+        font-size: 16px;
+    }
+    
+    .location-info h3,
+    .rule-category h3 {
+        font-size: 13px;
+    }
+    
+    .rule-category ul li,
+    .location-info p,
+    .nearby-places ul li {
+        font-size: 11px;
+    }
+    
+    .map-placeholder {
+        height: 150px;
+    }
+    
+    .map-placeholder p {
+        font-size: 12px;
+    }
+}@keyframes highlight{0%,100%{background-color:transparent}50%{background-color:rgba(0,159,212,.1)}}.booking-card.highlight{animation:2s ease-in-out highlight}.booking-note{font-size:12px;text-align:center;margin-top:10px;line-height:1.4;color:red}.booking-note:empty{display:none}
